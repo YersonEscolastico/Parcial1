@@ -162,7 +162,7 @@ namespace Parcial1.Registros
             decimal total = 0;
             servicios.Detalles = new List<ServiciosDetalle>();
             servicios = (Servicios)ViewState["Servicios"];
-            decimal importe = Convert.ToDecimal(CantidadTextBox.Text) - Convert.ToDecimal(PrecioTextBox.Text);
+            decimal importe = Convert.ToDecimal(CantidadTextBox.Text) * Convert.ToDecimal(PrecioTextBox.Text);
             servicios.Detalles.Add(new ServiciosDetalle(0, 0, Convert.ToDecimal(CantidadTextBox.Text),
             Convert.ToDecimal(PrecioTextBox.Text), importe));
             ViewState["Servicios"] = servicios;

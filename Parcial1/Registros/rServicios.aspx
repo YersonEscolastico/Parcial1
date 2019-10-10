@@ -34,7 +34,7 @@
 
                    <%-- Cantidad--%>
                     <div class="form-group">
-                        <label for="Cantidad:" class="col-md-3 control-label input-sm">Valor: </label>
+                        <label for="Cantidad:" class="col-md-3 control-label input-sm">Cantidad: </label>
                         <div class="col-md-6">
                             <asp:TextBox class="form-control input-sm" TextMode="Number" ID="CantidadTextBox" Text="0" runat="server"></asp:TextBox>
                         </div>
@@ -42,7 +42,7 @@
 
                    <%-- Logrado--%>
                     <div class="form-group">
-                        <label for="Precio:" class="col-md-3 control-label input-sm">Logrado: </label>
+                        <label for="Precio:" class="col-md-3 control-label input-sm">Precio: </label>
                         <div class="col-md-6">
                             <asp:TextBox class="form-control input-sm" TextMode="Number" ID="PrecioTextBox" Text="0" runat="server"></asp:TextBox>
                         </div>
@@ -62,7 +62,7 @@
                                     <asp:TemplateField ShowHeader="False" HeaderText="Remover">
                                         <ItemTemplate>
                                             <asp:Button ID="RemoveLinkButton" runat="server" CausesValidation="false" CommandName="Select"
-                                                Text="Eliminar " class="btn btn-success btn-sm" OnClick="RemoveLinkButton_Click" />
+                                                Text="Eliminar " class="btn btn-danger btn-sm" OnClick="RemoveLinkButton_Click" />
                                         </ItemTemplate>
                                     </asp:TemplateField>                              
                                     <asp:BoundField HeaderText="Categoria" DataField="Categoria" Visible="false" />                                  
