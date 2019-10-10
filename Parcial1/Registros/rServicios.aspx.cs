@@ -178,6 +178,7 @@ namespace Parcial1.Registros
         {
             if (GridView.Rows.Count > 0 && GridView.SelectedIndex >= 0)
             {
+                decimal total = 0;
                 Servicios servicios = new Servicios();
                 servicios = (Servicios)ViewState["Servicios"];
                 GridViewRow row = (sender as Button).NamingContainer as GridViewRow;
@@ -185,6 +186,11 @@ namespace Parcial1.Registros
                 ViewState["Servicios"] = servicios;
                 this.BindGrid();
 
+                foreach (var item in servicios.Detalles)
+                {
+                    total -= item.Importe;
+                }
+                TotalTextBox.Text = total.ToString();
             }
 
         }

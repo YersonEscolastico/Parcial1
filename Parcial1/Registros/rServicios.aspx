@@ -62,7 +62,7 @@
                                     <asp:TemplateField ShowHeader="False" HeaderText="Remover">
                                         <ItemTemplate>
                                             <asp:Button ID="RemoveLinkButton" runat="server" CausesValidation="false" CommandName="Select"
-                                                Text="Eliminar " class="btn btn-danger btn-sm" OnClick="RemoveLinkButton_Click" />
+                                                Text="Eliminar " class="btn btn-succes btn-sm" OnClick="RemoveLinkButton_Click" />
                                         </ItemTemplate>
                                     </asp:TemplateField>                              
                                     <asp:BoundField HeaderText="Categoria" DataField="Categoria" Visible="false" />                                  
